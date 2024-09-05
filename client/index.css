@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+form{
+    height: 180px;
+    width: 200px;
+    margin: 150px 400px 200px;
+    padding: 155px 30px 5px 30px;
+    background-image: url("im.avif");  
+    background-repeat: no-repeat;
+    background-size: 270px 150px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+}
+label{
+    margin-bottom: 50px;
+}
+input{
+    border-radius: 7px;
+    margin-bottom: 20px;
+    height:20px;
+    width: 200px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+button{
+    width: 200px;
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("im.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(6px); /* Apply blur to the background */
+    z-index: -1; /* Ensure it is behind all content */
+}
